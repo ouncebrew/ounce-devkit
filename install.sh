@@ -5,7 +5,7 @@
 #
 #   sh install.sh                    ounce-devkit.tar.xz next to this script, or
 #                                    else download the default version
-#   sh install.sh VERSION            download that devkit version, e.g. 20261113f
+#   sh install.sh VERSION            download that devkit version, e.g. 20261114
 #   sh install.sh ounce-devkit.tar.xz   install that archive
 #
 # A download comes from the devkit releases (OUNCE_DEVKIT_RELEASES), as
@@ -31,8 +31,8 @@
 set -eu
 
 # The devkit version that this script installs by default, and its SHA-256.
-DEFAULT_VERSION=20261113f
-DEFAULT_SHA256=6134335c80034aeaa2a769a64dc6d7266b19adcd270a8522077547512a113146
+DEFAULT_VERSION=20261114
+DEFAULT_SHA256=f24d5773b1ee1c2b19317f57e8ae54a60fcdcefe493a0e495297c241c4912f59
 # Where devkit versions are published.
 RELEASES="${OUNCE_DEVKIT_RELEASES:-https://github.com/ouncebrew/ounce-devkit/releases/download}"
 
