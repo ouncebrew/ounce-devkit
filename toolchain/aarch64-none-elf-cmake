@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: MIT
+#
+# CMake for Switch 2: CMake with the libounce toolchain file. It is installed
+# in $DEVKITPRO/portlibs/switch2/bin, which switch2vars.sh puts before the
+# Switch 1 portlibs in PATH, so it replaces devkitPro's aarch64-none-elf-cmake
+# (which builds with libnx, for Switch 1).
+set -e
+
+: "${DEVKITPRO:?Set DEVKITPRO to your devkitPro installation}"
+exec env CMAKE_TOOLCHAIN_FILE="${DEVKITPRO}/libounce/cmake/Switch2.cmake" cmake "$@"
