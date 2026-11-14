@@ -19,7 +19,7 @@ then run in this folder:
 
 ```sh
 sh install.sh              # the default devkit version
-sh install.sh 20261114     # a given version
+sh install.sh 20261115     # a given version
 ```
 
 Or use the Docker image (devkitPro's `devkitpro/devkita64` with the devkit):
