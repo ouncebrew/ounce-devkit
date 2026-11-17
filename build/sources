@@ -1,7 +1,0 @@
-# SPDX-License-Identifier: MIT
-#
-# The sources that build/make-devkit.sh builds the devkit from: a name, the
-# repository and the commit. make-devkit.sh fetches each into sources/<name>.
-libounce https://github.com/ouncebrew/libounce.git 39406be1f25a2f1da3f7dfdaf7a42d2216cda4d0
-ouncevk  https://github.com/ouncebrew/ouncevk.git  114e9298fc0e6ba351d68a1b22be7f4072a759f8
-kaihen   https://github.com/ouncebrew/kaihen.git   ddbf020066725a12274e65537066efbf268f67bc

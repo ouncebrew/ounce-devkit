@@ -14,13 +14,25 @@ The compiler, tools and other portlibs come from devkitPro unchanged.
 
 ## Install
 
+The devkit is three packages for devkitPro's pacman, in the `[ounce]`
+repository at <https://pkg.ouncebrew.org>
+([ouncebrew/pacman](https://github.com/ouncebrew/pacman)):
+
+- `libounce`, with `switch2vars.sh` and the CMake toolchain;
+- `ouncevk`;
+- `libkaihen`.
+
 Install [devkitPro pacman](https://devkitpro.org/wiki/devkitPro_pacman),
-then run in this folder:
+then run `sh install.sh`. It adds the repository and its signing key to
+pacman, and installs the three packages with the devkitPro packages they
+need. Update them later as other devkitPro packages:
 
 ```sh
-sh install.sh              # the default devkit version
-sh install.sh 20261117     # a given version
+sudo dkp-pacman -Syu
 ```
+
+`install.sh` also replaces a devkit that an earlier version of it unpacked
+from an archive.
 
 Or use the Docker image (devkitPro's `devkitpro/devkita64` with the devkit):
 
@@ -52,11 +64,12 @@ aarch64-none-elf-cmake -S . -B build && cmake --build build
 a client for that plugin. For kaiHEN's JIT and plugin APIs, see `JIT.md`
 and `PLUGINS.md` in kaiHEN's `libkaihen/`.
 
-## Build the devkit
+## Releases
 
-`sh build/make-devkit.sh` builds `ounce-devkit.tar.xz` from the commits that
-`build/sources` pins. It needs Podman or Docker. See the script for its
-options.
+Each library is released from its own repository, which publishes its
+package when a version tag is pushed; ouncebrew/pacman's `sources` pins the
+releases that the repository serves. The archives of earlier devkit
+versions stay on this repository's releases.
 
 ## License
 
