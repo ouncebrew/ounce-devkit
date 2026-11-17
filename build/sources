@@ -2,6 +2,6 @@
 #
 # The sources that build/make-devkit.sh builds the devkit from: a name, the
 # repository and the commit. make-devkit.sh fetches each into sources/<name>.
-libounce https://github.com/ouncebrew/libounce.git d1718bb7076fb356cb4cb81ab13d035db5367eea
+libounce https://github.com/ouncebrew/libounce.git 39406be1f25a2f1da3f7dfdaf7a42d2216cda4d0
 ouncevk  https://github.com/ouncebrew/ouncevk.git  114e9298fc0e6ba351d68a1b22be7f4072a759f8
-kaihen   https://github.com/ouncebrew/kaihen.git   eb81e1912586d32de96678153b7f806fca4a17e9
+kaihen   https://github.com/ouncebrew/kaihen.git   ddbf020066725a12274e65537066efbf268f67bc
